@@ -1,0 +1,51 @@
+create table practise
+(
+name varchar(30),
+id number primary key 
+);
+
+insert all 
+into practise (name,id)values('ankita',79)
+into practise (name,id)values('dipti',89)
+select * from dual;
+
+-- THIS IS SYNTAX OF INSERTING DATA TO TABLE
+
+
+select * from practise;
+
+
+
+
+
+
+
+CREATE TABLE my_account
+(
+  ACCOUNT_NUMBER INT PRIMARY KEY,
+    FIRST_NAME VARCHAR(40),
+    LAST_NAME VARCHAR(40),
+    ADDRESS VARCHAR(100),
+    PHONE_NUMBER INT,
+    EMAIL VARCHAR(40),
+    ACCOUNT_TYPE VARCHAR(40),
+    INITIAL_DEPOSIT INT,
+    DATE_OPENED DATE,
+    CREATED_BY VARCHAR(40),
+    CREATION_DATE DATE DEFAULT SYSDATE,
+    LAST_UPDATED_BY VARCHAR(40),
+    LAST_UPDATED_DATE DATE DEFAULT SYSDATE
+    );
+    
+    
+    INSERT ALL 
+
+    INTO my_account (ACCOUNT_NUMBER, FIRST_NAME ,LAST_NAME, ADDRESS ,PHONE_NUMBER, EMAIL ,ACCOUNT_TYPE, INITIAL_DEPOSIT ,DATE_OPENED, CREATED_BY , CREATION_DATE , LAST_UPDATED_BY, LAST_UPDATED_DATE) 
+    values(100,'Ankita','anku','somwari sadan',7786778899,'fhj@gmail.com','current',8000,sysdate,'me',sysdate,'me',sysdate)
+
+        INTO my_account (ACCOUNT_NUMBER, FIRST_NAME ,LAST_NAME, ADDRESS ,PHONE_NUMBER, EMAIL ,ACCOUNT_TYPE, INITIAL_DEPOSIT ,DATE_OPENED, CREATED_BY , CREATION_DATE , LAST_UPDATED_BY, LAST_UPDATED_DATE)
+    values(200,'Anu','singh','old delhi',78734687,'fhui@gmail.com','current',10000,sysdate,'her',sysdate,'she',sysdate)
+     select * from dual;
+    
+    select * from my_account;
+
