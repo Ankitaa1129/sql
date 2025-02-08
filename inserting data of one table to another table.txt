@@ -1,0 +1,70 @@
+    
+    create table new_account(
+    idd number,
+    namee varchar(50),
+    datee date
+    );
+    
+    insert all
+    into new_account(idd,namee,datee) values(ACCOUNT_NUMBER,FIRST_NAME,DATE_OPENED)
+    select ACCOUNT_NUMBER,FIRST_NAME,DATE_OPENED from my_account;
+    
+    
+    select * from new_account;
+    
+
+---------using ALTER to modify table structure----------------
+
+    -- now we are altering table new_account by adding not null to namee column
+    
+    ALTER TABLE new_account
+    MODIFY namee varchar(50) not null;
+    
+    desc new_account;
+
+
+
+ insert
+    into new_account(idd,namee,datee) values(300,'rishika',sysdate)
+    
+    DELETE FROM tab1e new_account WHERE new_account.idd= 300;
+    
+    -- now we are altering table new_account by adding not null to namee column
+    
+    ALTER TABLE new_account
+    MODIFY namee varchar(50) not null;
+    
+    desc new_account;
+    
+    
+       ALTER TABLE new_account
+    MODIFY (datee date not null,idd number not null);
+    
+    desc new_account;
+
+
+-- renaming a table column--
+
+    ALTER TABLE new_account 
+    RENAME column namee to my_name;
+    
+    desc new_account;
+
+
+---- adding new column----------
+ 
+    ALTER TABLE new_account
+    ADD roll_number number;
+    
+    
+    desc new_account;
+
+
+-- updating value of any column---
+
+  
+    UPDATE new_account
+    set roll_number=8
+    where idd=100;
+    
+    select * from new_account;
