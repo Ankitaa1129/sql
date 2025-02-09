@@ -1,0 +1,31 @@
+  select * from my_account;
+    desc my_account;
+    
+    
+    ALTER TABLE my_account
+    drop column LAST_UPDATED_DATE;
+
+
+when we use delete it only deletes data from table but structure of table remains there
+
+
+when we use drop it drops data and structure both from table,,, it just completely drops table and output comes as 
+table not exist.
+
+
+when we use truncate it deletes whole data and output comes as no data found but table still remains there. table
+structure still visible to us.
+
+
+    
+    
+    select * from XX_ACCOUNTNEW;     -- here data deleted table remains
+    TRUNCATE table  XX_ACCOUNTNEW;
+
+    
+    DROP TABLE XX_ACCOUNT3;
+    select * from XX_ACCOUNT3;          -- here table deleted and output as table not exist
+
+    
+     DROP TABLE XX_ACCOUNT4;
+      select * from XX_ACCOUNT4;        -- same here table get deleted
