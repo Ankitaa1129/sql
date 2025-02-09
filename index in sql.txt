@@ -1,0 +1,12 @@
+      create INDEX name_index
+      on my_account (first_name);
+      
+        select * from my_account
+        where first_name='Ankita';
+      
+      
+      create unique index name_job_idx
+      on my_account(first_name,address,date_opened)
+
+
+--unique index create index number uniquely on defined column so the data in that column is unique
