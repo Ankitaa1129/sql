@@ -1,0 +1,6 @@
+select department_name  from departments
+union
+select country_name  from countries;
+
+--for union data type should be same and columns must be same 
+--so if the column which we want in output have same data type then the union occur.
