@@ -4,3 +4,4 @@ select country_name  from countries;
 
 --for union data type should be same and columns must be same 
 --so if the column which we want in output have same data type then the union occur.
+-- when we use union duplicates removed but if we wnt duplicates then we have to use union all.
